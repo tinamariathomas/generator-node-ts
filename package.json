@@ -1,0 +1,17 @@
+{
+  "name": "generator-node-ts",
+  "version": "1.0.0",
+  "description": "Typescript-node yeoman generator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tina M. Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "keywords": ["yeoman-generator"],
+  "files": [
+    "generators"
+  ]
+}

@@ -11,4 +11,11 @@ module.exports = class extends Generator {
    method1() {
     this.log('Your settins are ' + JSON.stringify(this.answers));
   }
+  writing() {
+    this.fs.copyTpl(
+      this.templatePath('all'),
+      this.destinationPath('public/all'),
+      { title: this.answers.name }
+    );
+  }
 };

@@ -6,13 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node --project tsconfig.json src/app.ts",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "lint" : "tslint 'src/**/*.ts'",
+    "lint-fix" : "tslint 'src/**/*.ts' --fix"
   },
   "author": "<%= author %>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "ts-node": "^6.0.2",
+    "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   }
 }

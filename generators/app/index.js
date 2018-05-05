@@ -13,9 +13,12 @@ module.exports = class extends Generator {
   }
   writing() {
     this.fs.copyTpl(
-      this.templatePath('all'),
-      this.destinationPath('public/all'),
-      { title: this.answers.name }
+      this.templatePath('service'),
+      this.destinationPath('.'),
+      { title: this.answers.name, 
+        description: this.answers.description, 
+        author: this.answers.author 
+      }
     );
   }
 };

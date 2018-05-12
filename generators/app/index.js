@@ -20,5 +20,6 @@ module.exports = class extends Generator {
         author: this.answers.author 
       }
     );
+    this.fs.copy(this.templatePath('service/.*'), this.destinationRoot());
   }
 };
